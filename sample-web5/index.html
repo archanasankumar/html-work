@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <style>
+      table {
+        width: 100%;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .row {
+        display: flex;
+        flex-grow: 1;
+      }
+      .back {
+        background-image: url("../assets/img/ofiice.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .navigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 10;
+        overflow: hidden;
+
+        display: inline-block;
+        display: flex;
+        justify-content: right;
+      }
+      .navigation li a {
+        text-decoration: none;
+        padding: 0 4px;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        display: block;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .office-list li::before {
+        list-style: none;
+        content: "✔";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back">
+      <header>
+        <h2>Nitro</h2>
+        <ul class="navigation">
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+              <a href="#">Feedback</a>
+              <a href="#">Stories</a>
+              <a href="#">ID</a>
+            </div>
+          </li>
+          <li><a href="portfolio">portfolio</a></li>
+          <li><a href="services">services</a></li>
+          <li><a href="testimonals">testimonals</a></li>
+          <li><a href="blog">blog</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <h2 class="row">WELCOME</h2>
+        <p class="row">
+          lorem ipsum dolor sit amet consectetur adipisicing elit.optio
+          soluta<br />eius error.
+        </p>
+        <div class="row">
+          <button>Get in Touch</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">About Us</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>hellow</td>
+            <td>
+              lorem ipsum dolor sit amet consectur adipsicing elit<br />quotempora
+              eligendi in nistrum labore omnis<br />
+              <ul class="office-list">
+                <li>office quaerat eaque neque</li>
+                <li>possium aut consectetur incident</li>
+                <li>office quaerat eaque neque</li>
+                <li>office quaerat eaque neque</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

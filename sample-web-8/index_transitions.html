@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style>
+      img {
+        width: 150px;
+        height: 150px;
+        transition: width 2s;
+      }
+
+      #div1 {
+        transition-timing-function: linear;
+      }
+      #div2 {
+        transition-timing-function: ease;
+      }
+      #div3 {
+        transition-timing-function: ease-in;
+      }
+      #div4 {
+        transition-timing-function: ease-out;
+      }
+      #div5 {
+        transition-timing-function: ease-in-out;
+      }
+
+      img:hover {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The transition-timing-function Property</h1>
+
+    <p>Hover over the div elements below, to see the different speed curves:</p>
+    <img src="download.jpg" id="div1" />
+    <br />
+    <img src="download.jpg" id="div2" />
+    <br />
+    <img src="download.jpg" id="div3" />
+    <br />
+    <img src="download.jpg" id="div4" />
+    <br />
+    <img src="download.jpg" id="div5" />
+    <br />
+  </body>
+</html>

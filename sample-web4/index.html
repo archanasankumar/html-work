@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      h2 {
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a,
+      .dropbtn {
+        display: inline-block;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover,
+      .dropdown:hover {
+        background-color: red;
+      }
+
+      .course {
+        padding: 0;
+      }
+
+      /* Additional styling for links and dropdown */
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2>Mastery</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">About</a></li>
+        <li><a href="#about">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Pages</a>
+          <div class="dropdown-content">
+            <a href="#">Feedback</a>
+            <a href="#">Stories</a>
+            <a href="#">ID</a>
+          </div>
+        </li>
+      </ul>
+      <input type="text" placeholder="Search" />
+    </header>
+
+    <div class="picture">
+      <div class="picture-inner">
+        <div class="center">
+          <h1 class="title">Better Education For A Better World</h1>
+        </div>
+        <div class="center">
+          <button class="">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <table>
+        <tbody>
+          <tr class="course">
+            <td>
+              <h3>Learn Courses Online</h3>
+              <p>I agree with the terms and conditions, consulting is free</p>
+              <button>Read More</button>
+            </td>
+            <td>
+              <h3>High Qualified Teachers</h3>
+              <p>
+                I agree with terms and conditions, business is best for people
+              </p>
+              <button>Read More</button>
+            </td>
+            <td>
+              <h3>Book Library & Stores</h3>
+              <p>
+                I agree with terms and conditions, business is best for people
+              </p>
+              <button>Read More</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

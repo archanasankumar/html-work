@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+
+    <style>
+      .detail-box {
+        position: absolute;
+        color: white;
+        background-image: url(./assets/img/hero-bg.jpg);
+        height: 100%;
+        width: 100%;
+        top: 56px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+      }
+      .detail-box h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .detail-box h1.yellowfont {
+        color: yellow;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 35px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid transparent;
+      }
+      .yellow-button {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-top">
+        <span class="title">
+          <a href="#">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Lorem ipsum dolor sit amet</h3>
+          </a>
+        </span>
+        <span class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Call : <a href="tel:+01 1234567890">+01 1234567890</a></h3>
+        </span>
+        <span class="mail">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mail@domain.com">mail@domain.com</a>
+        </span>
+      </div>
+      <div class="sub-header">
+        <div class="d-flex">
+          <span>
+            <h1>Guarder</h1>
+          </span>
+          <ul class="navigation">
+            <li><a href="/" class="active">HOME</a></li>
+            <li><a href="./About/">ABOUT</a></li>
+            <li><a href="./Services/">SERVICES</a></li>
+            <li><a href="./Guards/">GUARDS</a></li>
+            <li><a href="./Contactus/">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="detail-box">
+      <h1>YOUR SAFTEY</h1>
+      <h1 class="yellowfont">OUR RESPONSIBILITY</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
+        magna aliqua.<br />
+        Ut enim ad minim veniam
+      </p>
+      <div class="d-flex-button">
+        <button class="button">Read more</button>
+        <button class="button yellow-button">Get A Quote</button>
+      </div>
+    </div>
+  </body>
+</html>

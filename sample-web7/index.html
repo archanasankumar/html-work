@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <style>
+      .wrap {
+        padding: 10px;
+        height: 250px;
+        width: 200px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid grey;
+      }
+      #grad1 {
+        height: 150px;
+        width: 150px;
+        background-color: rgb(255, 0, 132);
+        background-image: radial-gradient(
+          white,
+          rgb(238, 25, 60),
+          rgba(219, 119, 135, 0.915)
+        );
+      }
+      #grad2 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(
+          126,
+          57,
+          69
+        ); /* For browsers that do not support gradients */
+        background-image: conic-gradient(
+          pink,
+          rgb(208, 118, 133),
+          rgb(134, 64, 76),
+          rgb(145, 61, 75),
+          rgb(146, 20, 41),
+          pink,
+          rgb(208, 118, 133),
+          rgb(134, 64, 76),
+          rgb(145, 61, 75),
+          rgb(146, 20, 41)
+        );
+        border-radius: 50%;
+      }
+      #grad3 {
+        height: 100px;
+        width: 200;
+
+        background-image: linear-gradient(
+          to right,
+          rgb(8, 23, 28),
+          rgb(26, 97, 128),
+          rgb(49, 134, 168),
+          rgb(31, 196, 214)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <div class="wrap">
+                <h3>Radial Gradient</h3>
+                <div id="grad1" class="gradient-box"></div>
+              </div>
+            </td>
+
+            <td>
+              <div class="wrap">
+                <h3>Conic Gradient</h3>
+                <div id="grad2" class="gradient-box"></div>
+              </div>
+            </td>
+
+            <td>
+              <div class="wrap">
+                <h3>Linear Gradient</h3>
+                <div id="grad3" class="gradient-box"></div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
